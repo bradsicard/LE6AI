@@ -42,7 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -440,7 +441,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709184334}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4461bf25d698d3f489e558f9d58ddc98, type: 3}
   m_Name: 
@@ -456,19 +457,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 709184334}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c93b411e1e45d424fa10c4b050d6a14e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isVisible:
-    isVisible: 0
+    isVisible: 1
   isAudible:
     isAudible: 1
   isNear:
-    isNear: 0
+    isNear: 1
   isFlank:
-    isFlank: 0
+    isFlank: 1
 --- !u!1 &715205660 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1904455829157134757, guid: 7574bda3428fa9749b157b1eadcc98ec, type: 3}

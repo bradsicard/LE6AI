@@ -1,3 +1,5 @@
+using System.Runtime.InteropServices.WindowsRuntime;
+using Unity.VisualScripting;
 using UnityEngine;
 
 // All nodes in a decision tree must evaluate (make a decision/perform an action)
@@ -127,8 +129,24 @@ public class DecisionTreeNodesTheory : MonoBehaviour
     // Add results 2-5 (2% each) for lab 6!
     void Start()
     {
+        //result 1
         isVisible.no = isAudible;
         isAudible.yes = doCreep;
+
+        //result 2
+        isAudible.no = null;
+
+        //result 3
+        isVisible.yes = isNear;
+        isNear.no = isFlank;
+        isFlank.no = doAttack;
+
+        //result 4
+        isFlank.yes = doMove;
+
+        //result 5
+        isNear.yes = doAttack;
+
     }
 
     void Update()
